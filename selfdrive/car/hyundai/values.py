@@ -124,6 +124,7 @@ class CAR:
   KIA_CEED = "KIA CEED INTRO ED 2019"
   KIA_EV6 = "KIA EV6 2022"
   KIA_CARNIVAL_4TH_GEN = "KIA CARNIVAL 4TH GEN"
+  KIA_K8_HEV_2023 = "KIA K8 HYBRID 2023"
 
   # Genesis
   GENESIS_GV60_EV_1ST_GEN = "GENESIS GV60 ELECTRIC 1ST GEN"
@@ -262,6 +263,9 @@ CAR_INFO: Dict[str, Optional[Union[HyundaiCarInfo, List[HyundaiCarInfo]]]] = {
   CAR.KIA_CARNIVAL_4TH_GEN: [
     HyundaiCarInfo("Kia Carnival 2023-24", car_parts=CarParts.common([CarHarness.hyundai_a])),
     HyundaiCarInfo("Kia Carnival (China only) 2023", car_parts=CarParts.common([CarHarness.hyundai_k]))
+  ],
+  CAR.KIA_K8_HEV_2023: [
+    HyundaiCarInfo("KIa K8 Hybrid 2023", car_parts=CarParts.common([CarHarness.hyundai_k]))
   ],
 
   # Genesis
@@ -1939,6 +1943,14 @@ FW_VERSIONS = {
     (Ecu.fwdRadar, 0x7d0, None): [
       b'\xf1\x00MQhe SCC FHCUP      1.00 1.07 99110-P4000         ',
     ],
+  },
+  CAR.KIA_K8_HEV_2023: {
+    (Ecu.fwdCamera, 0x7c4, None): [
+      b'\xf1\x00GL3HMFC  AT KOR LHD 1.00 1.03 99211-L8000 210907',
+    ],
+    (Ecu.fwdRadar, 0x7d0, None): [
+      b'\xf1\x00GL3_ RDR -----      1.00 1.02 99110-L8000         ',
+    ]
   },
 }
 
