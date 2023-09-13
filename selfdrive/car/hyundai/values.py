@@ -1937,21 +1937,23 @@ FW_VERSIONS = {
   },
   CAR.KIA_SORENTO_HEV_4TH_GEN: {
     (Ecu.fwdCamera, 0x7c4, None): [
+      b'\xf1\x00GL3HMFC  AT KOR LHD 1.00 1.03 99211-L8000 210907',
       b'\xf1\x00MQ4HMFC  AT KOR LHD 1.00 1.12 99210-P2000 230331',
       b'\xf1\x00MQ4HMFC  AT USA LHD 1.00 1.11 99210-P2000 211217',
     ],
     (Ecu.fwdRadar, 0x7d0, None): [
+      b'\xf1\x00GL3_ RDR -----      1.00 1.02 99110-L8000         ',
       b'\xf1\x00MQhe SCC FHCUP      1.00 1.07 99110-P4000         ',
     ],
   },
-  CAR.KIA_K8_HEV_2023: {
-    (Ecu.fwdCamera, 0x7c4, None): [
-      b'\xf1\x00GL3HMFC  AT KOR LHD 1.00 1.03 99211-L8000 210907',
-    ],
-    (Ecu.fwdRadar, 0x7d0, None): [
-      b'\xf1\x00GL3_ RDR -----      1.00 1.02 99110-L8000         ',
-    ]
-  },
+  # CAR.KIA_K8_HEV_2023: {
+  #   (Ecu.fwdCamera, 0x7c4, None): [
+  #     b'\xf1\x00GL3HMFC  AT KOR LHD 1.00 1.03 99211-L8000 210907',
+  #   ],
+  #   (Ecu.fwdRadar, 0x7d0, None): [
+  #     b'\xf1\x00GL3_ RDR -----      1.00 1.02 99110-L8000         ',
+  #   ]
+  # },
 }
 
 CHECKSUM = {
