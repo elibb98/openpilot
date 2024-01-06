@@ -9,6 +9,7 @@ Version 0.9.6 (20XX-XX-XX)
 * Kia Niro Plug-in Hybrid 2022 support thanks to sunnyhaibin!
 * Toyota RAV4 2023 support
 * Toyota RAV4 Hybrid 2023-24 support
+* Kia K8 2023 support thanks to kirito3481!
 
 Version 0.9.5 (2023-11-17)
 ========================

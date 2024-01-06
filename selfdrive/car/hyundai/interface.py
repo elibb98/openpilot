@@ -238,6 +238,10 @@ class CarInterface(CarInterfaceBase):
       ret.mass = 1630.  # https://carprices.ae/brands/kia/2023/k8/1.6-turbo-hybrid
       ret.wheelbase = 2.895
       ret.steerRatio = 13.27  # guesstimate from K5 platform
+    elif candidate == CAR.KIA_K8_1ST_GEN:
+      ret.mass = 1540.  # https://www.auto-data.net/en/kia-k8-2.5-smartstream-gdi-198hp-automatic-42810
+      ret.wheelbase = 2.895
+      ret.steerRatio = 13.27  # guesstimate from K5 platform
 
     # Genesis
     elif candidate == CAR.GENESIS_GV60_EV_1ST_GEN:
