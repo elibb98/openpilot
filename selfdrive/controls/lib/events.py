@@ -856,8 +856,8 @@ EVENTS: dict[int, dict[str, Alert | AlertCallbackType]] = {
 
   EventName.overheat: {
     ET.PERMANENT: overheat_alert,
-    ET.SOFT_DISABLE: soft_disable_alert("System Overheated"),
-    ET.NO_ENTRY: NoEntryAlert("System Overheated"),
+    ET.SOFT_DISABLE: soft_disable_alert("시스템 과열됨"),
+    ET.NO_ENTRY: NoEntryAlert("시스템 과열됨"),
   },
 
   EventName.wrongGear: {
@@ -868,12 +868,12 @@ EVENTS: dict[int, dict[str, Alert | AlertCallbackType]] = {
   EventName.silentWrongGear: {
     ET.SOFT_DISABLE: Alert(
       "Gear not D",
-      "openpilot Unavailable",
+      "오픈파일럿을 사용할 수 없음",
       AlertStatus.normal, AlertSize.mid,
       Priority.LOW, VisualAlert.none, AudibleAlert.none, 0., 2., 3.),
     ET.NO_ENTRY: Alert(
       "Gear not D",
-      "openpilot Unavailable",
+      "오픈파일럿을 사용할 수 없음",
       AlertStatus.normal, AlertSize.mid,
       Priority.LOW, VisualAlert.none, AudibleAlert.none, 0., 2., 3.),
   },
@@ -935,8 +935,8 @@ EVENTS: dict[int, dict[str, Alert | AlertCallbackType]] = {
   },
 
   EventName.controlsdLagging: {
-    ET.SOFT_DISABLE: soft_disable_alert("Controls Lagging"),
-    ET.NO_ENTRY: NoEntryAlert("Controls Process Lagging: Reboot Your Device"),
+    ET.SOFT_DISABLE: soft_disable_alert("컨트롤 지연됨"),
+    ET.NO_ENTRY: NoEntryAlert("컨트롤 프로세스가 지연됨: 장치를 재시작하세요"),
   },
 
   # Thrown when manager detects a service exited unexpectedly while driving
@@ -946,16 +946,16 @@ EVENTS: dict[int, dict[str, Alert | AlertCallbackType]] = {
   },
 
   EventName.radarFault: {
-    ET.SOFT_DISABLE: soft_disable_alert("Radar Error: Restart the Car"),
-    ET.NO_ENTRY: NoEntryAlert("Radar Error: Restart the Car"),
+    ET.SOFT_DISABLE: soft_disable_alert("레이더 오류: 차를 재시작하세요"),
+    ET.NO_ENTRY: NoEntryAlert("레이더 오류: 차를 재시작하세요"),
   },
 
   # Every frame from the camera should be processed by the model. If modeld
   # is not processing frames fast enough they have to be dropped. This alert is
   # thrown when over 20% of frames are dropped.
   EventName.modeldLagging: {
-    ET.SOFT_DISABLE: soft_disable_alert("Driving Model Lagging"),
-    ET.NO_ENTRY: NoEntryAlert("Driving Model Lagging"),
+    ET.SOFT_DISABLE: soft_disable_alert("주행 모델 지연"),
+    ET.NO_ENTRY: NoEntryAlert("주행 모델 지연"),
     ET.PERMANENT: modeld_lagging_alert,
   },
 
