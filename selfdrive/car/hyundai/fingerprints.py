@@ -421,6 +421,14 @@ FW_VERSIONS = {
       b'\xf1\x87\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xf1\x816T6B4051\x00\x00\xf1\x006T6H0_C2\x00\x006T6B4051\x00\x00TLF0G24SL2n\x8d\xbe\xd8',
     ],
   },
+  CAR.SONATA_2024: {
+    (Ecu.fwdRadar, 0x7d0, None): [
+      b'\xf1\x00DN8_ RDR -----      1.00 1.00 99110-L1800         ',
+    ],
+    (Ecu.fwdCamera, 0x7c4, None): [
+      b'\xf1\x00DN8 MFC  AT KOR LHD 1.00 1.01 99211-L1800 230512',
+    ],
+  },
   CAR.TUCSON: {
     (Ecu.fwdRadar, 0x7d0, None): [
       b'\xf1\x00TL__ FCA F-CUP      1.00 1.01 99110-D3500         ',
