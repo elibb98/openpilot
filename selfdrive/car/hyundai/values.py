@@ -27,7 +27,8 @@ class CarControllerParams:
 
     if CP.carFingerprint in CANFD_CAR:
       upstream_taco = CP.safetyConfigs[-1].safetyParam & Panda.FLAG_HYUNDAI_UPSTREAM_TACO
-      self.STEER_MAX = 270 if not upstream_taco else 384 if vEgoRaw < 11. else 330
+      # self.STEER_MAX = 270 if not upstream_taco else 384 if vEgoRaw < 11. else 330
+      self.STEER_MAX = 384 # K8 384 testing
       self.STEER_DRIVER_ALLOWANCE = 250 if not upstream_taco else 350
       self.STEER_DRIVER_MULTIPLIER = 2
       self.STEER_THRESHOLD = 250 if not upstream_taco else 350
@@ -578,7 +579,7 @@ CAMERA_SCC_CAR = {CAR.KONA_EV_2022, }
 # these cars use a different gas signal
 HYBRID_CAR = {CAR.IONIQ_PHEV, CAR.ELANTRA_HEV_2021, CAR.KIA_NIRO_PHEV, CAR.KIA_NIRO_HEV_2021, CAR.SONATA_HYBRID, CAR.KONA_HEV, CAR.IONIQ,
               CAR.IONIQ_HEV_2022, CAR.SANTA_FE_HEV_2022, CAR.SANTA_FE_PHEV_2022, CAR.IONIQ_PHEV_2019, CAR.KIA_K5_HEV_2020,
-              CAR.KIA_OPTIMA_H, CAR.KIA_OPTIMA_H_G4_FL, CAR.AZERA_HEV_6TH_GEN, CAR.KIA_NIRO_PHEV_2022}
+              CAR.KIA_OPTIMA_H, CAR.KIA_OPTIMA_H_G4_FL, CAR.AZERA_HEV_6TH_GEN, CAR.KIA_NIRO_PHEV_2022, CAR.KIA_K8_HEV_1ST_GEN}
 
 EV_CAR = {CAR.IONIQ_EV_2020, CAR.IONIQ_EV_LTD, CAR.KONA_EV, CAR.KIA_NIRO_EV, CAR.KIA_NIRO_EV_2ND_GEN, CAR.KONA_EV_2022,
           CAR.KIA_EV6, CAR.IONIQ_5, CAR.IONIQ_6, CAR.GENESIS_GV60_EV_1ST_GEN, CAR.KONA_EV_2ND_GEN}
