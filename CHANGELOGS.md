@@ -5,6 +5,22 @@ sunnypilot - 0.9.7.0 (2024-xx-xx)
 ************************
 * UPDATED: Synced with commaai's openpilot
   * master commit 56e343b (February 27, 2024)
+* NEW❗: iOS Siri Shortcuts Navigation support thanks to twilsonco and mike86437!
+  * iOS and macOS Shortcuts to quickly set navigation destinations from your iOS device
+  * comma Prime support
+  * Personal Mapbox/Amap/Google Maps token support
+  * Instructions on how to set up your iOS Siri Shortcuts: https://routinehub.co/shortcut/17677/
+* NEW❗: Hyundai CAN-FD longitudinal:
+  * NEW❗: Parse lead info for camera-based SCC platforms
+    * Improve lead tracking when using openpilot longitudinal
+* NEW❗: Ford CAN-FD longitudinal
+  * NEW❗: Parse speed limit sign recognition from camera for certain supported platforms
+* RE-ENABLED: Map-based Turn Speed Control (M-TSC) for supported platforms
+  * openpilot Longitudianl Control available cars
+  * Custom Stock Longitudinal Control available cars
+* Ford F-150 2022-23 support
+* Ford F-150 Lightning 2021-23 support
+* Ford Mustang Mach-E 2021-23 support
 
 sunnypilot - 0.9.6.1 (2024-02-27)
 ========================
@@ -56,11 +72,6 @@ sunnypilot - 0.9.6.1 (2024-02-27)
 * UPDATED: Custom Offsets
   * Continued support for Legacy Driving Models (e.g., ND, BDv2, BDv1, FV, NS)
   * Deprecated support for newer Driving Models (e.g., CHv2, CH, LAv2, LAv1)
-* NEW❗: Hyundai CAN-FD longitudinal:
-  * NEW❗: Parse lead info for camera-based SCC platforms
-    * Improve lead tracking when using openpilot longitudinal
-* NEW❗: Ford CAN-FD longitudinal
-  * NEW❗: Parse speed limit sign recognition from camera for certain supported platforms
 * UPDATED: Hyundai/Kia/Genesis - ESCC Radar Interceptor
   * Message parsing improvements with the latest firmware update: https://github.com/sunnypilot/panda/tree/test-escc-smdps
 * UI Updates
@@ -71,9 +82,6 @@ sunnypilot - 0.9.6.1 (2024-02-27)
   * REMOVED: "Device ambient" temperature option on the sidebar
 * FIXED: New comma 3X support
 * FIXED: New comma eSIM support
-* Ford F-150 2022-23 support
-* Ford F-150 Lightning 2021-23 support
-* Ford Mustang Mach-E 2021-23 support
 * Bug fixes and performance improvements
 
 sunnypilot - 0.9.5.3 (2023-12-24)
