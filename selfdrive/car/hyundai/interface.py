@@ -252,7 +252,7 @@ class CarInterface(CarInterfaceBase):
     elif candidate == CAR.KIA_K8_HEV_1ST_GEN:
       ret.mass = 1650.  # https://carprices.ae/brands/kia/2023/k8/1.6-turbo-hybrid
       ret.wheelbase = 2.895
-      ret.steerRatio = 14.59 # test value
+      ret.steerRatio = 14.6 # test value
 
     # Genesis
     elif candidate == CAR.GENESIS_GV60_EV_1ST_GEN:
@@ -317,7 +317,8 @@ class CarInterface(CarInterfaceBase):
 
       if 0x1fa in fingerprint[CAN.ECAN]:
         ret.spFlags |= HyundaiFlagsSP.SP_NAV_MSG.value
-      if Params().get("DongleId", encoding='utf8') in ("012c95f06918eca4", "68d6a96e703c00c9"):
+      # last dongle id for testing
+      if Params().get("DongleId", encoding='utf8') in ("012c95f06918eca4", "68d6a96e703c00c9", "78ad5150de133637"):
         ret.spFlags |= HyundaiFlagsSP.SP_UPSTREAM_TACO.value
     else:
       ret.enableBsm = 0x58b in fingerprint[0]
