@@ -1,6 +1,7 @@
 from .comma_connect import CommaConnectApi
 from .sunnylink import SunnylinkApi
 
+
 class Api:
   def __init__(self, dongle_id, use_sunnylink=False):
     if use_sunnylink:
@@ -22,5 +23,5 @@ class Api:
 
 
 def api_get(endpoint, method='GET', timeout=None, access_token=None, use_sunnylink=False, **params):
-    return CommaConnectApi(None).api_get(endpoint, method, timeout, access_token, **params) if not use_sunnylink \
-      else SunnylinkApi(None).api_get(endpoint, method, timeout, access_token, **params)
+    return CommaConnectApi(None).api_get(endpoint, method, timeout, access_token, **params) if not use_sunnylink else \
+           SunnylinkApi(None).api_get(endpoint, method, timeout, access_token, **params)

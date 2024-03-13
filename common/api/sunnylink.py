@@ -2,7 +2,6 @@ import os
 import time
 import jwt
 import json
-import requests
 from pathlib import Path
 from datetime import datetime, timedelta
 from openpilot.common.params import Params
@@ -14,6 +13,7 @@ from openpilot.common.api.base import BaseApi
 API_HOST = os.getenv('SUNNYLINK_API_HOST', 'https://stg.api.sunnypilot.ai')
 UNREGISTERED_SUNNYLINK_DONGLE_ID = "UnregisteredDevice"
 MAX_RETRIES = 6
+
 
 class SunnylinkApi(BaseApi):
   def __init__(self, dongle_id):

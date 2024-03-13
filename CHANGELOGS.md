@@ -5,6 +5,34 @@ sunnypilot - 0.9.7.0 (2024-xx-xx)
 ************************
 * UPDATED: Synced with commaai's openpilot
   * master commit 56e343b (February 27, 2024)
+* NEW❗: Config Backup (Alpha access only for GitHub Sponsors and Patreon supporters)
+  * Remotely back up and restore sunnypilot settings easily
+  * Device registration with sunnylink ensures a secure, integrated experience across services
+  * AES encryption derived from the device's RSA private key is used for utmost security
+  * Settings are encrypted on-device, transmitted securely via HTTPS, and stored encrypted on sunnylink
+  * Prevents loss of settings after device resets, offering peace of mind through end-to-end encryption
+  * Early alpha access to all current and previous GitHub Sponsors and Patreon supporters
+    * Go to https://discord.gg/sunnypilot and reach out to one of the moderators to confirm your alpha access
+* NEW❗: iOS Siri Shortcuts Navigation support thanks to twilsonco and mike86437!
+  * iOS and macOS Shortcuts to quickly set navigation destinations from your iOS device
+  * comma Prime support
+  * Personal Mapbox/Amap/Google Maps token support
+  * Instructions on how to set up your iOS Siri Shortcuts: https://routinehub.co/shortcut/17677/
+* NEW❗: Hyundai CAN-FD longitudinal:
+  * NEW❗: Parse lead info for camera-based SCC platforms
+    * Improve lead tracking when using openpilot longitudinal
+* NEW❗: Ford CAN-FD longitudinal
+  * NEW❗: Parse speed limit sign recognition from camera for certain supported platforms
+* RE-ENABLED: Map-based Turn Speed Control (M-TSC) for supported platforms
+  * openpilot Longitudianl Control available cars
+  * Custom Stock Longitudinal Control available cars
+* UI Updates
+  * Display Metrics Below Chevron
+    * NEW❗: Metrics is now being displayed below the chevron instead of above
+    * NEW❗: Display both Distance and Speed simultaneously
+* Ford F-150 2022-23 support
+* Ford F-150 Lightning 2021-23 support
+* Ford Mustang Mach-E 2021-23 support
 
 sunnypilot - 0.9.6.1 (2024-02-27)
 ========================
@@ -56,11 +84,6 @@ sunnypilot - 0.9.6.1 (2024-02-27)
 * UPDATED: Custom Offsets
   * Continued support for Legacy Driving Models (e.g., ND, BDv2, BDv1, FV, NS)
   * Deprecated support for newer Driving Models (e.g., CHv2, CH, LAv2, LAv1)
-* NEW❗: Hyundai CAN-FD longitudinal:
-  * NEW❗: Parse lead info for camera-based SCC platforms
-    * Improve lead tracking when using openpilot longitudinal
-* NEW❗: Ford CAN-FD longitudinal
-  * NEW❗: Parse speed limit sign recognition from camera for certain supported platforms
 * UPDATED: Hyundai/Kia/Genesis - ESCC Radar Interceptor
   * Message parsing improvements with the latest firmware update: https://github.com/sunnypilot/panda/tree/test-escc-smdps
 * UI Updates
@@ -71,9 +94,6 @@ sunnypilot - 0.9.6.1 (2024-02-27)
   * REMOVED: "Device ambient" temperature option on the sidebar
 * FIXED: New comma 3X support
 * FIXED: New comma eSIM support
-* Ford F-150 2022-23 support
-* Ford F-150 Lightning 2021-23 support
-* Ford Mustang Mach-E 2021-23 support
 * Bug fixes and performance improvements
 
 sunnypilot - 0.9.5.3 (2023-12-24)

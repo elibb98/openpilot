@@ -60,10 +60,11 @@ class CarInterface(CarInterfaceBase):
     elif candidate == CAR.RAM_1500:
       ret.steerActuatorDelay = 0.2
       ret.wheelbase = 3.88
-      ret.minSteerSpeed = 0.5
-      ret.minEnableSpeed = 14.5
+      # Older EPS FW allow steer to zero
       # Older EPS FW allow steer to zero
       if any(fw.ecu == 'eps' and b"68" < fw.fwVersion[:4] <= b"6831" for fw in car_fw):
+        ret.minSteerSpeed = 0.
+      if any(fw.ecu == 'eps' and fw.fwVersion in (b"68273275AF", b"68273275AG", b"68312176AE", b"68312176AG",) for fw in car_fw):
         ret.minEnableSpeed = 0.
 
     elif candidate == CAR.RAM_HD:
