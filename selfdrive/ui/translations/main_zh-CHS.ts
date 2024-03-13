@@ -94,6 +94,10 @@
         <source>Enabling this toggle will retain the hotspot/tethering toggle state across reboots.</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Ngrok Service</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>AnnotatedCameraWidget</name>
@@ -139,6 +143,29 @@ Please use caution when using this feature. Only use the blinker when traffic an
     </message>
     <message>
         <source>Nudgeless</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>BackupSettings</name>
+    <message>
+        <source>Settings backed up for sunnylink Device ID: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Settings updated successfully, but no additional data was returned by the server.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Please try again later.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Settings restored. Confirm to restart the interface.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No settings found to restore.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1117,6 +1144,10 @@ This may take up to a minute.</source>
         <translation>软件</translation>
     </message>
     <message>
+        <source>sunnylink</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>sunnypilot</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1648,6 +1679,68 @@ First</source>
     <message>
         <source>Enable SSH</source>
         <translation>启用SSH</translation>
+    </message>
+</context>
+<context>
+    <name>SunnylinkPanel</name>
+    <message>
+        <source>sunnylink ID</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation type="unfinished">N/A</translation>
+    </message>
+    <message>
+        <source>Sponsor Status</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>SPONSOR</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Become a sponsor of sunnypilot to get early access to sunnylink features.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Manage Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Backup Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Early alpha access only. Become a sponsor to get early access to sunnylink features.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Become a Sponsor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Restore Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SunnylinkSponsorPopup</name>
+    <message>
+        <source>Early Access: Become a sunnypilot Sponsor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Scan the QR code to visit sunnyhaibin&apos;s GitHub Sponsors page</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Choose your sponsorship tier and confirm your support</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Join our community on Discord at https://discord.gg/sunnypilot and reach out to a moderator to confirm your sponsor status</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2248,6 +2341,11 @@ This feature must be used along with SLC, and/or V-TSC, and/or M-TSC.</source>
     </message>
     <message>
         <source>Speed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Distance
+Speed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
