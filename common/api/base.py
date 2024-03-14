@@ -4,6 +4,7 @@ from datetime import datetime, timedelta
 from openpilot.system.hardware.hw import Paths
 from openpilot.system.version import get_version
 
+
 class BaseApi:
   def __init__(self, dongle_id, api_host, user_agent="openpilot-"):
     self.dongle_id = dongle_id

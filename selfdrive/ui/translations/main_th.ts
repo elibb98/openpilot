@@ -157,6 +157,10 @@ Please use caution when using this feature. Only use the blinker when traffic an
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>OOPS! We made a booboo.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Please try again later.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1684,7 +1688,7 @@ First</source>
 <context>
     <name>SunnylinkPanel</name>
     <message>
-        <source>sunnylink ID</source>
+        <source>sunnylink Dongle ID</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1712,6 +1716,14 @@ First</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Are you sure you want to backup sunnypilot settings?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Backup</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Early alpha access only. Become a sponsor to get early access to sunnylink features.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1721,6 +1733,34 @@ First</source>
     </message>
     <message>
         <source>Restore Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Are you sure you want to restore the last backed up sunnypilot settings?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Restore</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>THANKS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Sponsor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Not Sponsor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Backing up...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Restoring...</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
