@@ -527,7 +527,7 @@ class CarController(CarControllerBase):
           self.human_turn = False
 
         # Determine when to reset steering
-        if (self.human_turn) and self.enable_human_turn_detection:
+        if ((self.human_turn) and self.enable_human_turn_detection) or (CS.out.vEgoRaw < 0.1):
           reset_steering = 1
         else:
           reset_steering = 0
